@@ -6,7 +6,7 @@ import image3 from "../../assets/banner/banner_3.jpg";
 
 export default function Banner() {
   return (
-    <div className="my-5 grid grid-cols-1 lg:grid-cols-3 gap-4">
+    <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-4">
       {/* banner 1 */}
       <div className="relative h-[250px] lg:h-[500px] lg:col-span-2 lg:row-span-2 rounded-xl overflow-hidden bg-green-600 flex items-center">
         {/* Text Left */}
