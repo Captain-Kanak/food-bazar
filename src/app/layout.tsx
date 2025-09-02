@@ -29,16 +29,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <header>
           {/* <TopNavbar /> */}
-          <div className="w-full fixed top-0 left-0 z-50">
-            <UserNavbar />
-            <Navbar />
-          </div>
+          <Navbar />
+          <UserNavbar />
         </header>
-        <main className="max-w-7xl mx-auto px-4 lg:px-0 min-h-screen pt-40">
+        <main className="max-w-7xl mx-auto px-4 lg:px-0 min-h-screen">
           {children}
         </main>
         <footer>

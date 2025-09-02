@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { FaPhoneAlt } from "react-icons/fa";
