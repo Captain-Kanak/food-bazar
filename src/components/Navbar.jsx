@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { FaPhoneAlt } from "react-icons/fa";
+import { CgLogIn } from "react-icons/cg";
 
 export default function Navbar() {
   const links = (
@@ -32,13 +32,22 @@ export default function Navbar() {
         <ul className="flex items-center gap-5">{links}</ul>
 
         {/* right nav - user info */}
-        <div>
-          <a href="" className="flex items-center gap-2">
-            <FaPhoneAlt />
-            <span className="hover:text-primary transition-colors duration-300">
-              (219) 555-0114
-            </span>
-          </a>
+        {/* login register buttons */}
+        <div className="flex items-center gap-2">
+          <CgLogIn size={20} />
+          <div className="flex items-center gap-1">
+            <Link href={"/"}>
+              <button className="cursor-pointer hover:text-primary transition-colors duration-300">
+                Login
+              </button>
+            </Link>
+            <span>/</span>
+            <Link href={"/"}>
+              <button className="cursor-pointer hover:text-primary transition-colors duration-300">
+                Register
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </nav>
